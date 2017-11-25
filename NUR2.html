@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>New_User_Registration</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/pure.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/redmond/jquery-ui.css" type="text/css" media="screen">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="container_11">
+        <div class="wrapper">
+            <div class="imgBox">
+                <p class="imgText">New User Registration</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="content">
+        <div class="main">
+            <div class="container_12">
+
+                	<form class="pure-form pure-form-aligned" id="doctorProfile"  method="post" action="">
+                    <fieldset>
+                        <div class="pure-control-group">
+                            <label for="firstNameDoctor">First Name</label>
+                            <input name="firstNameDoctor" id="firstNameDoctor" type="text" required>
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="lastNameDoctor">Last Name</label>
+                            <input name="lastNameDoctor" id="lastNameDoctor" type="text" required>
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="dobDoctor">Date of Birth</label>
+                            <input name="dobDoctor" id="dobDoctor" type="date" required>
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="addressDoctor">Address</label>
+                            <input name="addressDoctor" id="addressDoctor" type="text" required>
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="workPhoneDoctor">Work Phone</label>
+                            <input name="workPhoneDoctor" id="workPhoneDoctor" type="tel" pattern="^\d{3}\d{3}\d{4}$" required>
+                        </div>
+
+                        
+
+                        <div class="pure-control-group">
+                            <label for="specialtyDoctor">Specialty</label>
+                            <select name="specialtyDoctor" id="specialtyDoctor" required>
+                                <option value="">Select</option>
+                                <option>General Physician</option>
+                                <option>Heart Specialist</option>
+                                <option>Eye physician</option>
+                                <option>Orthopedics</option>
+                                <option>Psychiatry</option>
+                                <option>Gynecologist</option>
+                            </select>
+                        </div>
+						
+						
+
+                        <div class="pure-control-group">
+                            <label for="password">Password</label>
+                            <input name="password" id="password" type="text" placeholder="Password" required>
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input name="confirmPassword" id="confirmPassword" type="text" placeholder="Confirm Password" required>
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="userType">Type of User</label>
+                            <select name="userType" id="userType" required>
+                                <option value="">Select</option>
+                                <option>Doctor</option>
+                                <option>Patient</option>
+                               
+                            </select>
+                        </div>
+
+                        <div class="pure-controls">
+                            <a class="pure-button pure-button-primary" href="Patient.php">Return To Login</a>
+                            <button type="submit" class="pure-button pure-button-primary">Register</button>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+

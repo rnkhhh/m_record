@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New_User_Registration</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/pure.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/redmond/jquery-ui.css" type="text/css" media="screen">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="container_11">
+        <div class="wrapper">
+            <div class="imgBox">
+                <p class="imgText">New User Registration</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="content">
+        <div class="main">
+            <div class="container_12">
+
+                <form class="pure-form pure-form-aligned" method="post" action="register.php">
+                    <fieldset>
+                        <div class="pure-control-group">
+                            <label for="username">Username</label>
+                            <input name="username" id="username" type="text" placeholder="Username" >
+                        </div>
+						
+						  <div class="pure-control-group">
+                            <label for="username">Email</label>
+                            <input name="email" id="email" type="text" placeholder="Email" >
+                        </div>
+						
+						<div class="pure-control-group">
+                            <label for="firstNamePatient">First Name</label>
+                            <input name="firstNamePatient" id="firstNamePatient" type="text" >
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="lastNamePatient">Last Name</label>
+                            <input name="lastNamePatient" id="lastNamePatient" type="text">
+                        </div>
+						
+						
+						
+						 <div class="pure-control-group">
+                            <label for="genderPatient">Gender</label>
+                            <select name="genderPatient" id="genderPatient" >
+                                <option value="">Select</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+						
+						 <div class="pure-control-group">
+                            <label for="dobPatient">Date of Birth</label>
+                            <input name="dobPatient" id="dobPatient" type="date">
+                        </div>
+						
+						<div class="pure-control-group">
+                            <label for="addressPatient">Address</label>
+                            <input name="addressPatient" id="addressPatient" type="text" >
+                        </div>
+						
+						 <div class="pure-control-group">
+                            <label for="workPhonePatient">Work Phone</label>
+                            <input name="workPhonePatient" id="workPhonePatient" type="tel" pattern="^\d{3}\d{3}\d{4}$" >
+                        </div>
+						
+						
+						 <div class="pure-control-group">
+                            <label for="weightPatient">Weight</label>
+                            <input name="weightPatient" id="weightPatient" type="number" min="1" max="999" > lbs
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="feetHeightPatient">Height</label>
+                            <input name="feetHeightPatient" id="feetHeightPatient" type="number" min="1" max="9" > ft
+                            <input name="inchHeightPatient" id="inchHeightPatient" type="number" min="0" max="11" > in
+                        </div>
+						
+						
+
+                        <div class="pure-control-group">
+                            <label for="password">Password</label>
+                            <input name="password" id="password" type="text" placeholder="Password" >
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input name="confirmPassword" id="confirmPassword" type="text" placeholder="Confirm Password" >
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="userType">Type of User</label>
+                            <select name="userType" id="userType" >
+                                <option value="">Select</option>
+                              
+                                <option>Patient</option>
+                             
+                            </select>
+                        </div>
+
+                        <div class="pure-controls">
+                            <a class="pure-button pure-button-primary" href="Patient.php">Return To Login</a>
+                            <button type="submit" class="pure-button pure-button-primary">Register</button>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
